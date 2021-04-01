@@ -210,6 +210,9 @@ namespace MjmlDotNet.Core.Document
                 case "mj-text":
                     return new MjmlTextComponent(element, parent);
 
+                case "mj-table":
+                    return new MjmlTableComponent(element, parent);
+
                 case "mj-spacer":
                     return new MjmlSpacerComponent(element, parent);
 

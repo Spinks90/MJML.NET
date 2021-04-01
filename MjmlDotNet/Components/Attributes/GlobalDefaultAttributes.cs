@@ -340,6 +340,28 @@ namespace MjmlDotNet.Components.Attributes
                 { "padding-right", string.Empty },
                 { "css-class", string.Empty }
             };
+
+            internal static Dictionary<string, string> MjmlTable = new Dictionary<string, string>
+            {
+                { "align", "left" },
+                { "border", "none" },
+                { "cellpadding", "0" },
+                { "cellspacing", "0" },
+                { "container-background-color", string.Empty },
+                { "color", "#000000" },
+                { "font-family", "Ubuntu, Helvetica, Arial, sans-serif" },
+                { "font-size", "13px" },
+                { "font-weight", string.Empty },
+                { "line-height", "22px" },
+                { "padding-bottom", string.Empty },
+                { "padding-left", string.Empty },
+                { "padding-right", string.Empty },
+                { "padding-top", string.Empty },
+                { "padding", "10px 25px" },
+                { "table-layout", "auto" },
+                { "vertical-align", string.Empty },
+                { "width", "100%" }
+            };
         }
     }
 }

@@ -38,5 +38,25 @@ namespace MjmlDotNet.Tests.Components.Mjml.Head
 
             Assert.AreEqual(documentTitle, _HtmlDocument.Title);
         }
+
+        [TestMethod]
+        public void Yolo()
+        {
+
+            string mjml = @"
+<mjml>
+  <mj-body>
+        <table>
+          <tr>
+            <td>&bull; {{errorFile}}</td>
+          </tr>
+        </table>
+  </mj-body>
+</mjml>";
+
+            var html = _MjmlParser.ParseDocument(mjml);
+
+            _HtmlDocument = _HtmlParser.ParseDocument(html);
+        }
     }
 }
